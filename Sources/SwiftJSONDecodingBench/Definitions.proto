@@ -1,0 +1,32 @@
+syntax = "proto3";
+import "google/protobuf/struct.proto";
+
+message A {
+    int64 a = 1;
+    int64 b = 2;
+    int64 c = 3;
+    int64 d = 4;
+    int64 e = 5;
+    int64 f = 6;
+    int64 g = 7;
+    int64 h = 8;
+    int64 i = 9;
+}
+
+message B {
+    string a = 1;
+    bool b = 2;
+    double c = 3;
+}
+
+message C {
+    repeated int64 a = 1;
+    repeated bool b = 2;
+    repeated double c = 3;
+}
+
+message D {
+    string a  = 1;
+    int64 b = 2;
+    google.protobuf.Value c = 3;
+}
